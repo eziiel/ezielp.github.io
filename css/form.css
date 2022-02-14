@@ -1,0 +1,113 @@
+.bg-form{
+  background: #202020;
+  color: #fff
+}
+.bg-form .container {
+  grid-template-columns: 2fr 1fr ;
+}
+.bg-form h2 {
+  color: #141414;
+}
+.bg-form .container .subtitulo {
+  grid-column: 2;
+  text-align: right;
+}
+.formacao-texto {
+  grid-row: 1;
+  color: #a0a0a0;
+}
+.formacao-texto h3 {
+  max-width: 40ch;
+  padding: 40px 20px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.form-dados {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  color: #fff;
+}
+.form-tec {
+  padding: 20px;
+  background: #141414;
+  border-radius: 5px;
+  position: relative;
+}
+.form-tec::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  top: 22px;
+  left: -5px;
+  background: linear-gradient(180deg, #001AFF, #43BBFF);
+}
+.form-tec span {
+  margin: 40px 10px;
+}
+.form-tec ul {
+  margin: 10px;
+}
+.form-tec li {
+  font-size: .875rem;
+}
+
+.form-sub {
+  display: block;
+  padding: 20px 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+}
+.form-sub-info {
+  padding: 10px 40px;
+  line-height: 1.4;
+  font-size: .875rem;
+  letter-spacing: .02rem;
+}
+.form-cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 10px;
+  margin: 10px 20px;
+}
+.form-cursos span {
+  line-height: 1.4;
+  font-size: .875rem;
+  letter-spacing: .02rem;
+
+}
+
+@media (max-width:900px) {
+  .form .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .bg-form .container .subtitulo {
+    font-size: 4rem;
+    grid-column: 1;
+    color: #fff !important;
+    max-width: initial;
+  }
+  .formacao-texto {
+    grid-row: 2;
+  }
+  .form-tec span{
+    margin: 10px;
+    font-size: 1rem;
+  }
+  .form-dados {
+    gap: 10px;
+  }
+}
+@media (max-width:400px) {
+  .form-dados {
+   flex-direction: column;
+   gap: 10px ;
+  }
+   .form-tec span{
+    gap: 5px;
+    text-align: left;
+  }
+}
